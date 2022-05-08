@@ -1,38 +1,100 @@
 .App {
   text-align: center;
+  align-items: center;
+  margin: auto;
+  font-family: 'Optima';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #dcedc9;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: green;
+  border: 3px solid green;
+  position:relative;
+  border-spacing: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-border {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 3px solid green;
+  border-spacing: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-border2 {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 3px solid green;
 }
+.App-border3 {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 3px solid green;
+}
+.App-border4 {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 3px solid green;
+}
+.App-border5 {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 3px solid green;
+}
+.App-border6 {
+  background-color: #dcedc9;
+  min-height: 1vh;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 3px solid green;
+}
+
+.App-box {
+  align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.App-boxes {
+  font-family: 'Optima';
+  border: 2px solid green;
+  border-radius: 25px;
+  background-color: #dcedc9;
+}
+
