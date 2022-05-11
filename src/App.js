@@ -7,13 +7,31 @@ function App() {
   const [value4, setValue4] = React.useState();
   const [value5, setValue5] = React.useState();
   const handleChange = (event) => {
-    setValue(event.target.value);
+    // setValue(event.target.value);
+    console.log(event.target.value);
+    var newValue = 0;
+    if (event.target.value === "High") {
+      newValue = 100;
+    }
+    else if (event.target.value === "Dim") {
+      newValue = 50;
+    }
+    console.log(newValue);
   };
   const handleChange2 = (event) => {
-    setValue2(event.target.value);
+    // setValue2(event.target.value);
+    console.log(event.target.value);
+    var newValue = 0;
+    if (event.target.value === "High Speed") {
+      newValue = 100;
+    }
+    else if (event.target.value === "Low Speed") {
+      newValue = 50;
+    }
+    console.log(newValue);
   };
   const handleChange3 = (event) => {
-    setValue3(event.target.value);
+    // setValue3(event.target.value);
   };
   const handleChange4 = (event) => {
     setValue4(event.target.value);
