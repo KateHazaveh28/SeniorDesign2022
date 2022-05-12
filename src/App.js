@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
+const exec = require('child_process').exec;
 function App() {
   const [value, setValue] = React.useState();
   const [value2, setValue2] = React.useState();
@@ -12,11 +13,29 @@ function App() {
     var newValue = 0;
     if (event.target.value === "High") {
       newValue = 100;
+      exec('brightness 100', (err, stdout, stderr) => {
+        if (err) {
+          console.error(`exec error: ${err}`);
+          return;
+        }
+      });
     }
     else if (event.target.value === "Dim") {
       newValue = 50;
+      exec('brightness 50', (err, stdout, stderr) => {
+        if (err) {
+          console.error(`exec error: ${err}`);
+          return;
+        } 
+      });
     }
     console.log(newValue);
+    exec('brightness 0', (err, stdout, stderr) => {
+      if (err) {
+        console.error(`exec error: ${err}`);
+        return;
+      }
+    });
   };
   const handleChange2 = (event) => {
     // setValue2(event.target.value);
